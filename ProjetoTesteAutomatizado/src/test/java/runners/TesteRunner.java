@@ -10,6 +10,8 @@ import cucumber.api.junit.Cucumber;
 		features = "classpath:Features"
 		,glue= {"stepdefinitions"}
 		,tags = {"@RealizarLogin"}
+		,plugin = {"pretty", "html:target/cucumber-reports"} //Usado para alterar formas de leitura de testes
+		,monochrome = true
 		)
 public class TesteRunner {
 
